@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
+.imgg {
+    height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont {
+    color: orange;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hding {
+    color: white;
+    position: relative;
+    left: 370px;
+    font-size: 56px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    height: 300px;
+    width: 380px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    margin: 20px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.imgcard {
+    height: 260px;
+    width:100%;
+    border-radius: 3px;
+
+}
+.fm {
+    margin-top: 20px;
+    width: 38%;
+    background-color:black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+}
+
+.blogimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.cardcont {
+    padding-left: 60px;
+    color: black;
+    font-weight: bolder;
+}
+
+.cardcs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.blank {
+    height: 280px;
+}
+
+.create {
+    border: 3px solid yellow;
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+.cblog {
+    display: flex;
+}
+
+.cbcont {
+    color: Yellow;
+    font-size: 25px;
+    position: relative;
+    top: 200px;
+    right: 15px;
+
+}
+
+.cbhead {
+    color: white;
+    margin-left: 90px;
+    font-size: 38px;
+    position: relative;
+    bottom: 150px;
+}
+
+#aud {
+    position: relative;
+    bottom: 130px;
+    margin-left: 10px;
+}
+
+#join {
+    margin: 10px;
+    width: 780px;
+}
+
+.final {
+    position: relative;
+    left: 20px;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+.box1
+{
+    border-radius:8px;
+    padding:10px;
+    background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.file-upload {
+    display: none;
+}
+
+.circle {
+    border-radius: 100% !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 72px;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.p-image {
+    position: absolute;
+    top: 167px;
+    right: 30px;
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.p-image:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload-button {
+    font-size: 1.2em;
+}
+
+.upload-button:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    color: #999;
+}
+
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.cd {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding:8px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    width: 830px;
+    max-height:150px;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+/* Title of the card */
+.titlecd {
+    color: orangered;
+    position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+}
+
+
+.profile-info-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.title {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: #8a8a8f;
+    padding: 0 0 0.3125rem;
+}
+
+.title {
+    padding-top: 1.5625rem;
+}
+
+li {
+    padding: 0.625rem 0;
+}
+
+ .field {
+    font-weight: 700;
+}
+
+.value {
+    color: #666;
 }
